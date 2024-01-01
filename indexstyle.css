@@ -1,0 +1,178 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.company-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #76b900; /* Nvidia green color */
+    font-family: 'Oswald', sans-serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-row {
+    margin-top: 10px;
+}
+
+.nav-button {
+    background-color: #76b900; /* Nvidia green color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, #76b900, #009a00); /* Nvidia gradient */
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased shadow on hover */
+}
+
+ .newstock {
+    transform: scaleX(-1);
+    margin-top: 5%;
+    margin-right: 7%;
+ }
+ .newstock2 {
+    transform: scaleX(-1);
+    margin-top: 1%;
+    margin-left: 7%;
+ }
+.newstockheading {
+    margin-left: 9%;
+    margin-top:9%;
+    font-size: 25px;
+    color: #389636;
+  }
+.newstockdesc {
+    height: 150px;
+    width: 300px;
+    text-align: justify;
+    margin: 0 0 0 0;
+    margin-left: 7%;
+    position: relative;
+    top: -15px;
+}
+.specsbutton {
+    font-size: 13px;
+    padding: 8px;
+    background-color: #000000;
+    background-repeat:no-repeat;
+    margin-left: 14%;
+    position: relative;
+    top: -90px;
+    color: #ffffff;
+    border-color: #ffffff;
+    border-style: none;
+}
+.newstockheading2 {
+    margin-right: 9%;
+    margin-top:10%;
+    font-size: 25px;
+    color: #389636;
+  }
+.newstockdesc2 {
+    height: 150px;
+    width: 300px;
+    text-align: justify;
+    margin: 0 0 0 0;
+    margin-right: 7%;
+    position: relative;
+    top: -15px;
+}
+.specsbutton2 {
+    font-size: 13px;
+    padding: 8px;
+    background-color: #000000;
+    background-repeat:no-repeat;
+    margin-right: 14%;
+    position: relative;
+    top: -90px;
+    color: #ffffff;
+    border-color: #ffffff;
+    border-style: none;
+}
+.productbox {
+    background-image: url(8764038.jpg); 
+    padding: 1%;
+    padding-bottom: 4%;
+}
+.productbox2 {
+    background-image: url(92af838d576c73138a52b5ad29412347.jpg);
+    padding: 1%;
+    padding-bottom: 4%;
+}
+footer {
+    height: 400px;
+    background: linear-gradient(to bottom, #074806, #053e04);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #ffffff;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contactbox,
+.contactbox2,
+.contactbox3 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ffffff;
+    height: 250px;
+    width: 200px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contactbox3 {
+    margin-left: 40px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.bottomtext {
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Nav button hover effect */
+.nav-button:hover {
+    background-color: #2193b0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

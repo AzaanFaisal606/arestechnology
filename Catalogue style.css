@@ -1,0 +1,193 @@
+/* Reset and general styles */
+/* styles.css */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.company-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #76b900; /* Nvidia green color */
+    font-family: 'Oswald', sans-serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-row {
+    margin-top: 10px;
+}
+
+.nav-button {
+    background-color: #76b900; /* Nvidia green color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, #76b900, #009a00); /* Nvidia gradient */
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased shadow on hover */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Laptop section with hover effect and animations */
+.laptop {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    transition: box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.laptop:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.laptop h2 {
+    color: #444; /* Adjusted heading color for laptops */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #666; /* Adjusted price color */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #555; /* Adjusted description color */
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.specs {
+    color: #777; /* Adjusted specs color */
+}
+
+.specs h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.specs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.specs ul li {
+    margin-bottom: 5px;
+}
+
+footer {
+    height: 400px;
+    background: linear-gradient(to bottom, #074806, #053e04);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #ffffff;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contactbox,
+.contactbox2,
+.contactbox3 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ffffff;
+    height: 250px;
+    width: 200px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contactbox3 {
+    margin-left: 40px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.bottomtext {
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Nav button hover effect */
+.nav-button:hover {
+    background-color: #2193b0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Add-to-cart button styles */
+.add-to-cart {
+    background-color: #27ae60; /* Updated button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem; /* Adjusted font size */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-cart:hover {
+    background-color: #219e54; /* Darker color on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+

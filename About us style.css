@@ -1,0 +1,224 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.company-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #76b900; /* Nvidia green color */
+    font-family: 'Oswald', sans-serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-row {
+    margin-top: 10px;
+}
+
+.nav-button {
+    background-color: #76b900; /* Nvidia green color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, #76b900, #009a00); /* Nvidia gradient */
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased shadow on hover */
+}
+
+/* Main content styles */
+main {
+    padding: 30px;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: linear-gradient(to bottom right, #76b900, #000000bc);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    animation: slideInDown 1s ease forwards;
+    opacity: 0;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+/* About section styles */
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 20px;
+    animation: slideInDown 1s ease forwards;
+    opacity: 0;
+}
+
+.story,
+.values {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.values ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.values li {
+    margin-bottom: 10px;
+}
+
+/* Why choose us section styles */
+.why-choose-us {
+    background-image: linear-gradient(to bottom right, #76b900, #000000bc);
+    color: #333;
+    text-align: center;
+    padding: 80px 20px;
+    animation: slideInDown 1s ease forwards;
+    opacity: 0;
+}
+
+.why-choose-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Benefits list styles */
+.benefits {
+    list-style-type: none;
+    padding: 0;
+}
+
+.benefits li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Call-to-action button styles */
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: #2193b0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #145c1d;
+    transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Gradient overlay for sections */
+.section-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(7, 72, 6, 0.7), rgba(7, 72, 6, 0.9));
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.section:hover .section-overlay {
+    opacity: 1;
+}
+
+/* Footer styles */
+footer {
+    height: 400px;
+    background: linear-gradient(to bottom, #074806, #053e04);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #ffffff;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contactbox,
+.contactbox2,
+.contactbox3 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ffffff;
+    height: 250px;
+    width: 200px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contactbox3 {
+    margin-left: 40px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.bottomtext {
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Nav button hover effect */
+.nav-button:hover {
+    background-color: #2193b0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

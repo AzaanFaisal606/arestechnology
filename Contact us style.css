@@ -1,0 +1,140 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.company-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #76b900; /* Nvidia green color */
+    font-family: 'Oswald', sans-serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-row {
+    margin-top: 10px;
+}
+
+.nav-button {
+    background-color: #76b900; /* Nvidia green color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, #76b900, #009a00); /* Nvidia gradient */
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased shadow on hover */
+}
+main {
+    padding: 30px;
+}
+
+.contact-section {
+    text-align: center;
+    margin-top: 50px;
+    animation: fadeInUp 1s ease;
+}
+
+.contact-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #2a7a29;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.contact-info {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.contact-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2a7a29;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #555;
+}
